@@ -1,0 +1,44 @@
+                         How to approach K Means problem:
+
+#---------------------------------------------------------------------------------
+
+First of all, we should know how many clusters we want in our total feature set.
+
+1) Initailly we assign value to k(no of clusters) and how many time we want to iterate in order to recieve perfect centroids. 
+
+        self.k = k_
+        self.max_iter = 300
+
+2) Now we make empty dictionary of name "centroids" where we will save the centroids in values and keys will be used as centroid no.
+
+
+3) Here, we randomly chooses k feature set as initial centroids.
+
+
+4) Now we make empty dictionary of name "classifications" where we save the feature points nearest to centroids in to their respective keys according to centroids's key.
+
+
+5) Here we find the distance of each feature set from each centroid,then put the feature set into the value coloumn of key(also related to centroids) for which its distance is minimum. 
+Keep repeating this for all the data points.
+
+6) Here, after we separated all the feature set according to centroid feature now take the  average in each grouped feature set and generate new centroids.
+
+7) Now keep repeating 4,5 and 6 for no of iterations as defined and finally we get the desirable centroids.
+
+#----------------------------------------------------------------------------------
+
+I also wrote code to predict in which group particular point lies but i haven't call the function as in the form it was not written that we have to predict the centroid for any point.
+
+
+#------------- Code to fetch the text file in order to find the centroids----------
+
+Firstly, I generated the dialog box using tkinter's filedialog to ftech the text file of features set.
+Secondly, I converted the data according to our requirements.
+
+#------- Code to write and save the text file with the name of "Clusters.txt" -----
+
+Created and Opened the file with the name of "clusters.txt".
+by creatng reference to functions of the class we feteched the centroids and then converted them to strings in ordere to write them.
+Finally after all this "file is saved" will appear
+
+#--------------------------gangotricertification@gmail.com-------------------------  
